@@ -358,3 +358,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer()
     else:
         await query.answer("Nice.. Next Time Sure You Will Get It 🤭😝",show_alert=True)
+    else:
+         Send_message=await bot.send_video(
+                chat_id=update.chat.id,
+                video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
+                caption=f"Couldn't Find This Movie.Please Try Again Or Search Google.
+                 \n\n"
+                        f"ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക🔍കൂടുതൽ അറിയാൻ വീഡിയോ കാണുക(25 Sec)",
+                parse_mode="html",
+                reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🔍 Google 🔎", url=f"https://t.me/joinchat/Myfreak123" 
+                    )
