@@ -358,7 +358,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer()
     else:
         await query.answer("Nice.. Next Time Sure You Will Get It 🤭😝",show_alert=True)
-    else:
+   
          Send_message=await bot.send_video(
                 chat_id=update.chat.id,
                 video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
