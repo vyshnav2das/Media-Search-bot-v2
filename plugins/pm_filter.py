@@ -123,7 +123,7 @@ async def group(client, message):
         btn = []
 
         search = message.text
-        result_txt = f"**🎬 Title:** {search}\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**©️ {message.chat.title} 🍿**"
+        result_txt = f"**🎬 Title:** {search}\n**🌟 Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n\n**©️ {message.chat.title} 🍿**"
 
         nyva=BOT.get("username")
         if not nyva:
@@ -134,7 +134,7 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"🎬 [{get_size(file.file_size)}] 🎥 {file.file_name}"
+                filename = f"📂 [{get_size(file.file_size)}] 🔷 {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
@@ -289,7 +289,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Update Channel', url='https://t.me/malayalam_movies_h'),
                 ]
                 ]
-            await query.message.edit(text="<b>MC : <a href='https://t.me/malayayalies'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/malayalam_movies_h'>malayalamcinema</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>MC : <a href='https://t.me/malayayalies'>𝐌𝐚𝐥𝐚𝐲𝐚𝐥𝐚𝐦 𝐂𝐢𝐧𝐞𝐦𝐚 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/malayalam_movies_h'>malayalamcinema</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
