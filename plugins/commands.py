@@ -70,8 +70,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/ErrorXbotz')
+                        InlineKeyboardButton('©𝐌𝐚𝐥𝐚𝐲𝐚𝐥𝐚𝐦 𝐂𝐢𝐧𝐞𝐦𝐚', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('🔰𝐍𝐞𝐰 𝐌𝐨𝐯𝐢𝐞𝐬🔰', url='https://t.me/joinchat/slPWoPDfoJc3NTVl')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -103,12 +103,12 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Source Code", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
+                        InlineKeyboardButton("©𝐌𝐚𝐥𝐚𝐲𝐚𝐥𝐚𝐦 𝐂𝐢𝐧𝐞𝐦𝐚", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("📺𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬", url='https://t.me/netflixorgi'),
                     ],
                    [
-                       InlineKeyboardButton("Update Channel", url='https://t.me/ErrorXbotz'),
-                       InlineKeyboardButton("Support Group", url='https://t.me/ErrorXsupport'),
+                       InlineKeyboardButton("🔷𝐌𝐨𝐯𝐢𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬🔷", url='https://t.me/malayalam_movies_h'),
+                       InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩", url='https://t.me/malayayalies'),
                     ],
                      [
                         InlineKeyboardButton("About", callback_data="about")
@@ -318,8 +318,8 @@ async def broadcast_handler_open(_, m):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
-            InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
+            InlineKeyboardButton('Update Channel', url='https://t.me/malayalam_movies_h'),
+            InlineKeyboardButton('2nd Group', url='https://t.me/malayalam_cinmaa')
         ]
         ]
     await message.reply(text="<b><u>Commands In This Bot.</u> \n\n /start To Start The Bot. \n /help To Get Help \n /channel - Get basic infomation about channels \n /total - Show total of saved files \n /delete - Delete file from database \n /index - Index all files from channel \n /logger - Get log file</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
