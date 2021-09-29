@@ -214,7 +214,7 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
         ]
         ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links \n If Any Doubts In Commands Give /Commands \n\n @ErrorXBotz</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links \n\n @ErrorXBotz</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
@@ -314,7 +314,7 @@ async def broadcast_handler_open(_, m):
     else:
         await broadcast(m, db)
 
-@Client.on_message(filters.command('help'))
+@Client.on_message(filters.command('commands'))
 async def bot_info(bot, message):
     buttons = [
         [
