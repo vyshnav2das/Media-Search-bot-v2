@@ -29,6 +29,11 @@
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
+        "ADMIN_ID": {
+            "description": "Give Your Id To Controll Broadcast",
+            "value": "1718532980",
+            "required": true
+        },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
             "value": ""
