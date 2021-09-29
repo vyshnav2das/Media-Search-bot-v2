@@ -214,7 +214,7 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
         ]
         ]
-    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>If You Have Any Doubts And If Any Errors In Codes Or Bugs Inform Us On Our Support Group ❗️\n Use Below Buttons To Get Support Group / Update channel Links \n If Any Doubts In Commands Give /Commands \n\n @ErrorXBotz</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('info') & (filters.private | filters.group))
 async def showinfo(client, message):
@@ -313,3 +313,14 @@ async def broadcast_handler_open(_, m):
         await m.delete()
     else:
         await broadcast(m, db)
+
+@Client.on_message(filters.command('help'))
+async def bot_info(bot, message):
+    buttons = [
+        [
+            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
+            InlineKeyboardButton('Support Group', url='https://t.me/ErrorXSupport')
+        ]
+        ]
+    await message.reply(text="<b><u>Commands In This Bot.</u> \n\n /start To Start The Bot. \n /help To Get Help \n /channel - Get basic infomation about channels \n /total - Show total of saved files \n /delete - Delete file from database \n /index - Index all files from channel \n /logger - Get log file</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
