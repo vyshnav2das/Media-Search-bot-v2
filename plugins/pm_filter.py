@@ -221,7 +221,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⌫ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📜 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -235,7 +235,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⌫ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📜 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -259,7 +259,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("NEXT »»", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("NEXT ⌦", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📜 Pages {int(index)}/{data['total']}", callback_data="pages")]
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("«« BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⌫ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
@@ -286,10 +286,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
+                    InlineKeyboardButton('Update Channel', url='https://t.me/malayalam_movies_h'),
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>MC : <a href='https://t.me/malayayalies'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n Update Channel : <a href='https://t.me/malayalam_movies_h'>malayalamcinema</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -310,7 +310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                     InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/ErrorXBotz'),
+                     InlineKeyboardButton('🔰𝐌𝐨𝐯𝐢𝐞 𝐮𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔰', url='https://t.me/malayalam_movies_h'),
                     ]
                     ]
                 
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('📥 More Bots 📥', url='https://t.me/ErrorXBotz'),
+                        InlineKeyboardButton('📥 Movie asking group 📥', url='https://t.me/malayayalies'),
                     ]
                     ]
                 
